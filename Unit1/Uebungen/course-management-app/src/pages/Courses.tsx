@@ -13,6 +13,7 @@ function Courses(): React.ReactElement {
                             <th>Kurstitel</th>
                             <th>Datum</th>
                             <th>Status</th>
+                            <th>Teilnehmer Anzahl</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -25,6 +26,7 @@ function Courses(): React.ReactElement {
                                         {course.status === 'active' ? 'Aktiv' : 'Inaktiv'}
                                     </span>
                                 </td>
+                                <td>{course.participants ? course.participants.length : 0}</td>
                             </tr>
                         ))}
                     </tbody>
