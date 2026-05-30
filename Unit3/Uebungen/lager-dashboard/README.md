@@ -18,17 +18,31 @@ Die Studierenden sollen die bereitgestellte React-Anwendung analysieren, versteh
 Analysieren Sie die bestehende Dashboard-Seite (`src/pages/Dashboard.tsx`) und beantworten Sie folgende Fragen:
 
 - Welche Informationen werden als Kennzahlen (KPIs) dargestellt?
+  - Artikel gesamt
+  - Kritische Artikel
+  - Kategorien
 - Welche Werte können Mitarbeitende auf einen Blick erkennen?
+ - KPI's
+ - Artikel pro Kategorie
+ - Kritische & Warn Artikel
 - Wie sind die drei Ebenen des Dashboards aufgebaut?
+ - KPI
+ - Artikel pro Kategorie Vergleich
+ - Kritische Artikel Tabelle
 
 ### 2. Kennzahlen erklären
 Beschreiben Sie, welche Informationen als Kennzahlen dargestellt werden und warum genau diese Werte gewählt wurden. Überlegen Sie: Welche weiteren Kennzahlen könnten für eine Lagerverwaltung sinnvoll sein?
+ - Artikel gesamt => Wie viele Artikel sind insgesamt im Sortiment vorhanden.
+ - Kritische Artikel => Wie viele Artikel müssen dringend nachbestellt werden
+ - Kategorien gesamt => Wie viele verschieden Kategorien sind im Sortiment vorhanden
 
 ### 3. Diagramm begründen
 Erklären Sie, warum das Balkendiagramm (Artikel pro Kategorie) in diesem Kontext sinnvoll ist. Welche anderen Diagrammtypen wären denkbar? Wann wären sie besser geeignet?
+- Man sieht schnell welche Kategorien am meisten oder wenigsten Artikel beinhalten.
 
 ### 4. Tabelle erklären
 Begründen Sie, warum die Tabelle nur kritische und Warnartikel anzeigt und nicht alle 80 Artikel. Welche Vorteile hat diese Filterung für die Benutzererfahrung?
+- Die Tabelle zeigt somit weniger Daten auf einmal und sie sind nach ihrem Status gruppiert. Bei all diesen Artikel sollte schnell gehandelt werden. Daher ist es bei diesen Artikel wichtig, dass man sie schneller findet.
 
 ### 5. Benutzerfreundlichkeit prüfen
 Untersuchen Sie, ob die Seite benutzerfreundlich aufgebaut ist. Beantworten Sie:
