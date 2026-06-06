@@ -1,5 +1,7 @@
 import React from 'react';
 import { artikel } from '../data/mockData';
+import PrimaryButton from '../components/PrimaryButton';
+import StatusChip from '../components/StatusChip';
 
 // -----------------------------------------------------------------------
 // Warnungen – absichtlich wieder andere Button- und Status-Darstellung
@@ -119,28 +121,11 @@ const Warnungen: React.FC = () => {
               </div>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-                {/* Status-Label: nur farbiger Text in Grossbuchstaben – keine Badge-Form */}
-                <span style={{ color: '#e65100', fontWeight: 'bold', fontSize: '13px' }}>
-                  KRITISCH
-                </span>
+                <StatusChip status="kritisch" />
 
-                {/* Button: orange, eckig, Grossbuchstaben – ganz anders als Dashboard */}
-                <button
-                  style={{
-                    backgroundColor: '#e65100',
-                    color: 'white',
-                    padding: '8px 16px',
-                    border: 'none',
-                    borderRadius: '2px',
-                    cursor: 'pointer',
-                    fontSize: '13px',
-                    fontWeight: 'bold',
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.5px',
-                  }}
-                >
+                <PrimaryButton onClick={() => console.log('Bestellen')}>
                   Bestellen
-                </button>
+                </PrimaryButton>
               </div>
             </div>
           ))}
@@ -187,36 +172,12 @@ const Warnungen: React.FC = () => {
               </div>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-                {/* Status-Label: schwarze Box mit weissem Text – wieder andere Form */}
-                <span
-                  style={{
-                    backgroundColor: '#d32f2f',
-                    color: 'white',
-                    padding: '3px 8px',
-                    fontSize: '11px',
-                    fontWeight: 'bold',
-                    textTransform: 'uppercase',
-                    letterSpacing: '1px',
-                  }}
-                >
-                  Ausverkauft
-                </span>
+                <StatusChip status="nicht-verfügbar" />
 
                 {/* Button: rund, anderer Text als oben ("Jetzt bestellen" statt "Bestellen") */}
-                <button
-                  style={{
-                    backgroundColor: '#d32f2f',
-                    color: 'white',
-                    padding: '6px 20px',
-                    border: 'none',
-                    borderRadius: '20px',
-                    cursor: 'pointer',
-                    fontSize: '13px',
-                    fontWeight: 600,
-                  }}
-                >
+                <PrimaryButton onClick={() => console.log('Bestellen')}>
                   Jetzt bestellen
-                </button>
+                </PrimaryButton>
               </div>
             </div>
           ))}

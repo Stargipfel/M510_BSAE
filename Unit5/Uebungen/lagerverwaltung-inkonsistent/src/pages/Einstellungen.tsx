@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Einstellungen.css';
+import SecondaryButton from '../components/SecondaryButton';
+import PrimaryButton from '../components/PrimaryButton';
 
 // -----------------------------------------------------------------------
 // Einstellungen – CSS-Klassen-Buttons statt Inline-Styles (andere Herangehensweise)
@@ -100,8 +102,12 @@ const Einstellungen: React.FC = () => {
 
           {/* Buttons via CSS-Klassen – «Sichern» statt «Speichern»! */}
           <div style={{ display: 'flex', gap: '10px', justifyContent: 'flex-end' }}>
-            <button className="btn-abbrechen">Abbrechen</button>
-            <button className="btn-sichern">Sichern</button>
+            <SecondaryButton onClick={() => console.log('Änderungen verwerfen')}>
+              Abbrechen
+            </SecondaryButton>
+            <PrimaryButton onClick={() => console.log('Änderungen speichern')}>
+              Speichern
+            </PrimaryButton>
           </div>
         </div>
       </div>
@@ -165,19 +171,9 @@ const Einstellungen: React.FC = () => {
 
           {/* Inline-Style-Button «Speichern» – absichtlich andere Beschriftung als «Sichern» oben */}
           <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-            <button
-              style={{
-                padding: '9px 24px',
-                backgroundColor: '#1976d2',
-                color: 'white',
-                border: 'none',
-                borderRadius: '4px',
-                cursor: 'pointer',
-                fontSize: '14px',
-              }}
-            >
+            <PrimaryButton onClick={() => console.log('Einstellungen speichern')}>
               Speichern
-            </button>
+            </PrimaryButton>
           </div>
         </div>
       </div>
@@ -227,20 +223,9 @@ const Einstellungen: React.FC = () => {
 
           {/* Noch eine weitere Button-Variante: grüner Outline-Button */}
           <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-            <button
-              style={{
-                padding: '7px 20px',
-                backgroundColor: 'transparent',
-                color: '#2e7d32',
-                border: '2px solid #2e7d32',
-                borderRadius: '6px',
-                cursor: 'pointer',
-                fontSize: '14px',
-                fontWeight: 600,
-              }}
-            >
-              Save
-            </button>
+            <PrimaryButton onClick={() => console.log('Einstellungen speichern')}>
+              Speichern
+            </PrimaryButton>
           </div>
         </div>
       </div>

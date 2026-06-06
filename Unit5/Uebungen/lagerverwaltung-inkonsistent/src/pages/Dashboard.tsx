@@ -1,5 +1,8 @@
 import React from 'react';
 import { artikel } from '../data/mockData';
+import PrimaryButton from '../components/PrimaryButton';
+import SecondaryButton from '../components/SecondaryButton';
+import StatusChip from '../components/StatusChip';
 
 // -----------------------------------------------------------------------
 // Dashboard – absichtlich uneinheitliche Gestaltung (didaktisches Beispiel)
@@ -112,50 +115,19 @@ const Dashboard: React.FC = () => {
         <h2 style={{ marginBottom: '14px', fontSize: '18px', color: '#333' }}>Schnellaktionen</h2>
         <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
 
-          {/* Button 1: blauer Primär-Button, mittleres Padding */}
-          <button
-            style={{
-              backgroundColor: '#1976d2',
-              color: 'white',
-              padding: '8px 18px',
-              border: 'none',
-              borderRadius: '4px',
-              cursor: 'pointer',
-              fontSize: '14px',
-            }}
-          >
+          <PrimaryButton onClick={() => console.log('Bericht laden')}>
             Bericht laden
-          </button>
+          </PrimaryButton>
 
-          {/* Button 2: Outline-Variante, gleicher Radius wie Button 1 */}
-          <button
-            style={{
-              backgroundColor: 'white',
-              color: '#1976d2',
-              padding: '8px 18px',
-              border: '1px solid #1976d2',
-              borderRadius: '4px',
-              cursor: 'pointer',
-              fontSize: '14px',
-            }}
-          >
+          <PrimaryButton onClick={() => console.log('Exportieren')}>
             Exportieren
-          </button>
+          </PrimaryButton>
 
-          {/* Button 3: grau, Pill-Form, kleiner – wirkt wie Sekundär, ist aber anders */}
-          <button
-            style={{
-              backgroundColor: '#9e9e9e',
-              color: 'white',
-              padding: '6px 14px',
-              border: 'none',
-              borderRadius: '20px',
-              cursor: 'pointer',
-              fontSize: '12px',
-            }}
-          >
+          <SecondaryButton onClick={() => console.log('Aktualisieren')}>
             Aktualisieren
-          </button>
+          </SecondaryButton>
+
+
         </div>
       </div>
 
@@ -189,35 +161,7 @@ const Dashboard: React.FC = () => {
                   {a.kategorie} · {a.lagerort} · Bestand: {a.bestand}
                 </div>
               </div>
-
-              {/* Status-Chip "Kritisch": Pill-Badge mit Rahmen und Icon */}
-              {a.status === 'kritisch' && (
-                <span
-                  style={{
-                    backgroundColor: '#fff3e0',
-                    color: '#e65100',
-                    padding: '3px 10px',
-                    borderRadius: '12px',
-                    fontSize: '12px',
-                    border: '1px solid #ffcc80',
-                  }}
-                >
-                  ⚠ Kritisch
-                </span>
-              )}
-
-              {/* Status-Chip "Nicht verfügbar": absichtlich ganz anders – nur fetter Text */}
-              {a.status === 'nicht-verfügbar' && (
-                <span
-                  style={{
-                    color: '#d32f2f',
-                    fontWeight: 'bold',
-                    fontSize: '13px',
-                  }}
-                >
-                  ✗ Nicht verfügbar
-                </span>
-              )}
+              <StatusChip status={a.status} />
             </div>
           ))}
         </div>
