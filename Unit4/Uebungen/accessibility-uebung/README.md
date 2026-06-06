@@ -37,6 +37,35 @@ Für jedes gefundene Problem:
 4. **Warum** ist es ein Problem? (Wen betrifft es, welche Konsequenz hat es?)
 5. **Wie** könnte man es beheben?
 
+#### Navigation
+- Navigation.tsx
+- Nicht mit Tab erreichbar
+- Manuell
+- Navigation kann nur mit der Maus bedient werden
+- Nicht Div verwenden sondern lieber <a>
+- Falls doch mit div braucht es role=link, onClick(), OnEnter/onSpace usw.
+
+#### Kontrast
+- Dashboard
+- Schrift ist nicht gut lesbar
+- Manuell/axe
+- Infos können nicht richtig gelesen werden
+- Andere dünklere Schriftfarbe mit mehr kontrast verwenden
+
+#### Button Beschriftung
+- Dashboard
+- Aktion ist nicht klar
+- Manuell
+- Man weiss nicht was der Button macht
+- Klar beschriften
+
+#### Statusübersicht
+- Dashboard
+- Keine Ahnung was die einzelnen Farben bedeuten/keine Legende
+- Manuell
+- So ist der Bereich komplett sinnlos und verwirrt nur
+- Legende einbauen
+
 ---
 
 ## Teil 2 – Umsetzung
