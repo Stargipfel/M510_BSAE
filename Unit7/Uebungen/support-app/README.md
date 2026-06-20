@@ -49,6 +49,12 @@ Legen Sie vor dem Test fest:
 - **Welche Testmethode** Sie verwenden
 - **Warum** diese Methode für diesen Kontext passend ist
 
+**Testmethode**
+Cognitive Walkthrough
+
+**Warum**
+Einzelarbeit daher keine Gruppenmitglieder. Für Moderierter Usability-Test braucht es mehrere Personen damit es optimal funktioniert.
+
 Geeignete Methoden sind zum Beispiel:
 
 | Methode | Kurzbeschreibung |
@@ -93,6 +99,16 @@ Verwenden Sie eine einfache Tabelle oder Liste:
 
 ---
 
+1. Header => Navigationspunkte sind auf der falschen Seite platziert. Oben rechts schaut der Benutzer selterner hin. Ausserdem ist man es Standardmässig von vielen anderen Apps gewohnt, dass die Navi links gehalten wird.
+2. Dashboard => Sub Titel der Karte ist falsch platziert. Der Text sollte neben dem Titel auf der Linken Seite sein.
+3. Ticketübersicht => Der Kontrast ist zum Teil sehr schlecht. Manche Texte sind in den Karten fast nicht lesbar und es ist mühsam anzuschauen.
+4. Navigation => Wenn neues Ticket ausgewählt wird, wird der Punkt Tickets gleich hervorgehoben, obwohl es ein eigener Menupunkt ist.
+5. Neues Ticket => Es ist angenehm ein neues Ticket zu erstellen. Das Formular ist klar und sinnvoll strukturiert. 
+6. Neues Ticket => Die Pflichtfelder werden nicht markiert, somit hat man als Benutzer keine Ahnung was erfasst werden muss und was optional ist
+7. Neues Ticket => Die Action Button sind für mich nicht optimal platziert. Der Primary Button sollte unten rechts platziert werden und der Secondary Button links unten. Ausserdem finde ich die Gap zwischen den Buttons viel zu klein
+8. Confirmation => Finde ich sehr gelungen. Alles auf einen Blick plus Action Buttons für weiteres vorgehen
+9. Confirmation => Evt. wäre es noch gut einen Action Button für nochmals ein Ticket zu erfassen. Je nach dem könnte der Benutzer auch mehrere Anliegen haben.
+
 ## Teil 4 – Ergebnisse auswerten
 
 Formulieren Sie aus Ihren Beobachtungen:
@@ -107,6 +123,14 @@ Formulieren Sie aus Ihren Beobachtungen:
 | **Mittel** | Verwirrt oder verzögert die Nutzung |
 | **Gering** | Kleinigkeit, kaum spürbare Auswirkung |
 
+**Wichtig**
+1. Es erschwert die Navigation deutlich, es funktioniert zwar ohne Probleme aber es nervt.
+3. Manche Infos zu den Tickets sind kaum zu erkennen. Für den User sehr müsahm und ermüdent
+6. Das Erstellen ist zwar gewährleistet, aber der Benutzer kann überrascht werden. Wenn ich kein Sternchen sehe gehe ich davon aus, dass das Feld optional ist.
+
+**Gering**
+4. Kann den User stören und ist nicht optimal aber kein Beinbruch
+
 ---
 
 ## Teil 5 – Kurzfazit
@@ -118,6 +142,12 @@ Formulieren Sie kurz:
 - Welche **zwei Probleme** haben die höchste Priorität?
 
 ---
+
+Grundsätzlich ist die App Strukturiert und schlank aufgebaut. Die Funktionalitäten funktioneren alle. Man kommt immer zum Ziel es gibt nirgends etwas was komplett blockiert oder gar nicht geht.
+
+Die Navigation sollte angepasst werden und links gehalten werden. Der Kontrast bei der Übersicht muss umgedingt verbessert werden. Pflichtfelder müssen markiert werden im Formular.
+
+Navi und Kontrast sind aus meiner Sicht am wichtigsten. Danach die Pflichtfelder im Formular markieren. Der Rest ist dann nicht ganz so dringend umzusetzen
 
 ## Erwartetes Ergebnis
 
